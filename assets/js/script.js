@@ -8,7 +8,7 @@ $(document).ready(function(){
         var body = $('#body-field').val();
         var created = new Date();
         var id = noteCount + 1;
-        console.log("title = " + title + "body = " + body + "date = " + created.toLocaleString("en-US") + "id = " + id);
+        console.log($('<div id="note' + id + '"><div class="list-title">' + title + '</div> <div class="list-date">' + created.toLocaleString("en-US") + '</div> <div class="list-text">' + body + '</div> </div>'));
     });
     // delete
     // display

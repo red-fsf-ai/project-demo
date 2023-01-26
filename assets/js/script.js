@@ -2,6 +2,13 @@ $(document).ready(function(){
     var noteCount = 0;
     var activeNote = null;
     // colour
+      // retrieves the colour swatch's colour and sets the notepad elements' backgrounds
+      $('.color-box').click(function(){
+        var color = $(this).css('background-color');
+        $('#notepad').css('background-color', color);
+        $('#title-field').css('background-color', color);
+        $('#body-field').css('background-color', color);
+      });
     // save button
     $('#btn-save').click(function(){
         // captures note form values

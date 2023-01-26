@@ -3,6 +3,13 @@ $(document).ready(function(){
     var activeNote = null;
     // colour
     // save
+    $('#btn-save').click(function(){
+        var title = $('#title-field').val();
+        var body = $('#body-field').val();
+        var created = new Date();
+        var id = noteCount + 1;
+        console.log("title = " + title + "body = " + body + "date = " + created.toLocaleString("en-US") + "id = " + id);
+    });
     // delete
     // display
 });

@@ -1,56 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Note Taker</title>
     <link rel='stylesheet' href='./assets/css/style.css'>
-    <title>Document</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        The Note Machine
-        <!--colour selector-->
-        <div id='color-select'>
-          <div class='color-box white'></div>
-          <div class='color-box orange'></div>
-          <div class='color-box banana'></div>
-          <div class='color-box honeydew'></div>
-          <div class='color-box flora'></div>
-          <div class='color-box aqua'></div>
-          <div class='color-box ice'></div>
-          <div class='color-box sky'></div>
-          <div class='color-box orchid'></div>
-          <div class='color-box lavender'></div>
-          <div class='color-box pink'></div>
-        </div>
+      The Note Machine
+      <!--colour selector-->
+      <div id='color-select'>
+        <div class='color-box white'></div>
+        <div class='color-box orange'></div>
+        <div class='color-box banana'></div>
+        <div class='color-box honeydew'></div>
+        <div class='color-box flora'></div>
+        <div class='color-box aqua'></div>
+        <div class='color-box ice'></div>
+        <div class='color-box sky'></div>
+        <div class='color-box orchid'></div>
+        <div class='color-box lavender'></div>
+        <div class='color-box pink'></div>
+      </div>
     </header>
+
     <main>
-        <!--headings-->
-        <div></div>
-        <!--saved note list-->
-        <div id="note-list">
-            <div id='listed'>
-            </div>
-          </div>
-        <!--draft note form-->
-        <div id="notepad">
-            <div id="note-title">
-              <input id="title-field" type="text" placeholder="title your note">
-            </div>
-            <div id="note-body">
-              <textarea id="body-field"></textarea>
-            </div>
-          </div>
-        </main>
+      <!--headings-->
+      <div class="headers">
+        <div id="list-head">
+          <b>Your Notes</b> <i>(click to edit/delete)</i>
+        </div>
+        <div id="note-head">
+          <b>Your Notepad</b>
+          <span id="edit-mode" class="no-display">
+            <i> (edit mode) </i>
+          </span>
+        </div>
+      </div>
+      
+      <!--saved note list-->
+      <div id="note-list">
+        <div id='listed'>
+        </div>
+      </div>
+
+      <!--draft note form-->
+      <div id="notepad">
+        <div id="note-title">
+          <input id="title-field" type="text" placeholder="title your note">
+        </div>
+        <div id="note-body">
+          <textarea id="body-field"></textarea>
+        </div>
+      </div>
     </main>
-        <!--buttons-->
-        <footer>
-            <button id="btn-save">Save</button>
-            <button id="btn-delete">Delete / Clear </button>
-          </footer>
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
-    <script src="./assets/js/script.js"></script>
-</body>
+
+    <!--save/delete notes-->
+    <footer>
+      <button id="btn-save">Save</button>
+      <button id="btn-delete">Delete / Clear </button>
+    </footer>
+  </body>
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+  <script type='text/javascript' src='./assets/js/script.js'></script>
 </html>

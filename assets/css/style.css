@@ -133,3 +133,72 @@
   #btn-delete {
     background-color: #E41A36;
   }
+
+  /*colour selector*/
+
+  header {
+    text-align: left;
+    font-weight: 800;
+    font-size: 28px;
+    border-bottom: solid 3px #DEDEDE;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #color-select {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    padding: 5px 10px 0 0;
+  }
+  
+  .color-box {
+    border: solid 2px #929292;
+    height: 10px;
+    width: 10px;
+    margin-left: 5px;
+  }
+  
+  .white {
+    background-color: white;
+  }
+  
+  .orange {
+    background-color: #FFD37F;
+  }
+  
+  .banana {
+    background-color: #FFFA81;
+  }
+  
+  .honeydew {
+    background-color: #D5FA80;
+  }
+  
+  .flora {
+    background-color: #78F87F;
+  }
+  
+  .aqua {
+    background-color: #79FBD6;
+  }
+  
+  .ice {
+    background-color: #79FDFE;
+  }
+  
+  .sky {
+    background-color: #7AD6FD;
+  }
+  
+  .orchid {
+    background-color: #7B84FC;
+  }
+  
+  .lavender {
+    background-color: #D687FC;
+  }
+  
+  .pink {
+    background-color: #FF89FD;
+  }
+  

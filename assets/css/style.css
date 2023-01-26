@@ -1,2 +1,60 @@
+ /*saved notes*/
+ .headers {
+    margin-top: 20px;
+    margin-bottom: -10px;
+    font-size: 20px;
+  }
+  
+  #list-head {
+    margin-left: 2.5%;
+    width: 30.5%;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  #note-head {
+    width: 60%;
+    margin-left: 5%;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  #note-list {
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 2.5%;
+    width: 30.5%;
+    height: 400px;
+    overflow: scroll;
+    border: solid 3px #929292;
+    border-radius: 5px;
+    background-color: #DEDEDE;
+  }
+  
+  .within-list {
+    cursor: pointer;
+  }
+  
+  .list-title {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px 5px 0 5px;
+  }
+  
+  .list-date {
+    font-weight: 200;
+    font-style: italic;
+    font-size: 12px;
+    padding: 0 5px 0 5px;
+  }
+  
+  .list-text {
+    padding: 0 5px 5px 5px;
+    border-bottom: solid 1px black;
+  }
+    
+  #listed:nth-child(odd):hover {
+    cursor: pointer;
+  }
 
 

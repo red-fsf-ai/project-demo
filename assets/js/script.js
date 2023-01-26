@@ -51,4 +51,21 @@ $(document).ready(function(){
       });
     // delete
     // display
+    $('#listed').click(function(e){
+        // the div contains three nested divs that actually have elements, so retrieve the id and colour of the parent div (previously saved activeNote)
+        var id = e.target.parentElement.id;
+        var color = e.target.parentElement.style.backgroundColor;
+        activeNote = id;
+        // show the edit mode subtitle
+        $('#edit-mode').removeClass('no-display').addClass('display');
+        // retrieve the values of each child element in the saved note and sets them as the value of the draft note
+        var titleSel = $('#' + id)[0].children[0].innerHTML;
+        var bodySel = $('#' + id)[0].children[2].innerHTML;
+        $('#title-field').val(titleSel);
+        $('#body-field').val(bodySel);
+        // set the background colour of each of the elements
+        $('#notepad').css('background-color', color);
+        $('#title-field').css('background-color', color);
+        $('#body-field').css('background-color', color);
+      })
 });

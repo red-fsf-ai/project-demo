@@ -50,6 +50,23 @@ $(document).ready(function(){
         $('#body-field').css('background-color', 'white');
       });
     // delete
+    $('#btn-delete').click(function(){
+        // if the note currently displayed in the notepad has an id (aka activeNote is true)
+        if (activeNote) {
+          // find the note with the currently active id number and remove it from the document
+          $('#' + activeNote)[0].remove();
+          // set note id back to null
+          activeNote = null;
+          // hide the edit mode subtitle
+          $('#edit-mode').removeClass('display').addClass('no-display');
+        }
+        // reset the note form
+          $('#title-field').val('');
+          $('#body-field').val('');
+          $('#notepad').css('background-color', 'white');
+          $('#title-field').css('background-color', 'white');
+          $('#body-field').css('background-color', 'white');
+      });
     // display
     $('#listed').click(function(e){
         // the div contains three nested divs that actually have elements, so retrieve the id and colour of the parent div (previously saved activeNote)
